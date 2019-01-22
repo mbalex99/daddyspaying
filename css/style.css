@@ -1670,3 +1670,12 @@ select.form-control:not([size]):not([multiple]) {
 	}
 
  }
+
+ #password-form {
+	 max-width: 400px;
+	 margin: auto;
+ }
+
+ #password-form input {
+	 text-align: center;
+ }
