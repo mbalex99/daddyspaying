@@ -6,7 +6,7 @@
 	<!-- Basic -->
 	<meta charset="utf-8">
 	<meta name="keywords" content="HTML5 Template" />
-	<meta name="description" content="Arlin - Responsive HTML5 Wedding Template">
+	<meta name="description" content="Not a Domestic Couple">
 	<meta name="author" content="regediter.com">
 
 	<!-- Page Title -->
@@ -90,7 +90,7 @@
 		<nav id="primary-navbar" class="navbar navbar-expand-lg navbar-light bg-white">
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					Arl<span class="custom-color">i</span>n
+					Max<span class="custom-color">&</span>Adam
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -516,11 +516,11 @@
 	<script src="js/main.js"></script>
 
 	<!-- Google Map Settings-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJPVWTcPN_d8edG3uVA_Z1Ly800RPEhRU"></script>
 	<script>
 
 		// Add the map center coordinate
-		var center = { lat: 40.815182, lng: -74.238908 };
+		var center = { lat: 44.478210, lng: -73.218300 };
 
 		var map = new google.maps.Map(document.getElementById('map'),
 			{
@@ -542,50 +542,26 @@
 			var infowindow = new google.maps.InfoWindow({
 				content: markers.infowindow
 			});
-
-
-			marker.addListener('click', function () {
-				infowindow.open(map, marker);
-			});
-
+			infowindow.open(map, marker);
 
 		}
 
 		// Add the markers to the Map
 		addMarker({
-			coordinate: { lat: 40.815182, lng: -74.238908 },
+			coordinate: { lat: 44.478210, lng: -73.218300 },
 			infowindow: '<div id="content">' +
-				'<h4 class="font-weight-light"><span class="custom-color">First</span> Point</h4>' +
+				'<h4 class="font-weight-light"><span class="custom-color">Hilton Burlington</span> Lake Champlain</h4>' +
 				'<div class="map-info-content">' +
-				'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>' +
+				'<p>60 Battery Street, Burlington VT 05401, USA <br/>' +
+				'August 3rd at 4:30pm Eastern Time<br/>' +
+				'TEL: +1-802-658-6500</p>' +
+				'<a href="https://goo.gl/maps/HmAAgqiZe1G2" target="_blank" class="btn btn-primary btn-block">Open in Google Maps</p>' +
 				'</div>' +
 				'</div>',
 			icon: "img/map_marker.png",
 
 
 
-		});
-
-		addMarker({
-			coordinate: { lat: 40.815496, lng: -74.225912 },
-			infowindow: '<div id="content">' +
-				'<h4 class="font-weight-light"><span class="custom-color">Second</span> Point</h4>' +
-				'<div class="map-info-content">' +
-				'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>' +
-				'</div>' +
-				'</div>',
-			icon: "img/map_marker.png",
-		});
-
-		addMarker({
-			coordinate: { lat: 40.812987, lng: -74.245466 },
-			infowindow: '<div id="content">' +
-				'<h4 class="font-weight-light"><span class="custom-color">Third</span> Point</h4>' +
-				'<div class="map-info-content">' +
-				'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>' +
-				'</div>' +
-				'</div>',
-			icon: "img/map_marker.png",
 		});
 
 
