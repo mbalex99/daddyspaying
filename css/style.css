@@ -914,7 +914,7 @@ footer h2 {
     -webkit-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
-    width: 42px;
+    width: 60px;
     z-index: 2;
 }
 #accordion.panel-group.line div.panel.panel-default.active a.panel-link div.panel-number{
