@@ -19,7 +19,7 @@ if (localStorage.getItem("loggedIn") != null) {
 $("#password-form").submit(function(event){
 	event.preventDefault();
 	$("#wrong-password-alert").fadeOut();
-	var password = $("#password-input").val() || ""
+	var password = ($("#password-input").val() || "").toLowerCase()
 	if (password === "lookingforasurrogate") {
 		localStorage.setItem("loggedIn", true);
 		$('#loader').fadeOut('slow');
