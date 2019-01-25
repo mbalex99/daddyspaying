@@ -79,10 +79,9 @@ $(document).ready(function () {
 			transition: 'fade2',
 			transitionDuration: 4000,
 			slides: [
-				{ src: "./img/portfolio_1.jpg" },
-				{ src: "./img/portfolio_2.jpg" },
-				{ src: "./img/portfolio_3.jpg" },
-				{ src: "./img/portfolio_4.jpg" }
+				{ src: "./img/IMG_8844.jpg" },
+				{ src: "./img/DSC_0006.jpg" },
+				{ src: "./img/IMG_9744.jpg" },
 			]
 		});
 	}
