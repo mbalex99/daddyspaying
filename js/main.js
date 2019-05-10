@@ -10,30 +10,6 @@
 
 // });
 
-$("#wrong-password-alert").hide();
-
-if (localStorage.getItem("loggedIn") != null) {
-	$('#loader').hide();
-} 
-
-$("#password-form").submit(function(event){
-	event.preventDefault();
-	$("#wrong-password-alert").fadeOut();
-	var password = ($("#password-input").val() || "").toLowerCase()
-	if (password === "lookingforasurrogate") {
-		localStorage.setItem("loggedIn", true);
-		$('#loader').fadeOut('slow');
-	} else {
-		localStorage.removeItem("loggedIn");
-		$("#wrong-password-alert").fadeIn();
-	}
-})
-
-$("#logout-button").click(function(event) {
-	event.preventDefault();
-	localStorage.removeItem("loggedIn");
-	$('#loader').fadeIn('slow');
-});
 
 $(document).ready(function () {
 
